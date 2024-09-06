@@ -71,7 +71,7 @@ fi
 export HASHED_PASSWORD
 
 # download the configuation.nix template
-curl -s "https://raw.githubusercontent.com/ilude/nix/main/configuration.nix?$(date +%s)" > configuration.nix
+curl -s "https://raw.githubusercontent.com/tidde88/nix/main/configuration.nix?$(date +%s)" > configuration.nix
 
 # process the template
 envsubst "${HASHED_PASSWORD}" < configuration.nix > /mnt/etc/nixos/configuration.nix
@@ -79,9 +79,9 @@ envsubst "${HASHED_PASSWORD}" < configuration.nix > /mnt/etc/nixos/configuration
 nixos-install
 
 # Check if the directory exists
-if [ -d "/mnt/home/anvil" ]; then
-    touch /mnt/home/anvil/.zshrc
-    chown 1000:100 /mnt/home/anvil/.zshrc
+if [ -d "/mnt/home/tobi" ]; then
+    touch /mnt/home/tobi/.zshrc
+    chown 1000:1000 /mnt/home/tobi/.zshrc
 fi
 
 while true; do

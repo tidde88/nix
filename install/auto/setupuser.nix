@@ -12,7 +12,7 @@
     description = "Import SSH key from GitHub";
     wantedBy = [ "multi-user.target" ];
     serviceConfig = {
-      User = "anvil";
+      User = "tobi";
       Type = "oneshot";
       ExecStart = "${script}";
     };

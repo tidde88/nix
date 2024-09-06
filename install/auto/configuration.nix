@@ -14,7 +14,7 @@
 	# disable ipv6
 	networking.enableIPv6  = false;
 
-	time.timeZone = "America/New_York";
+	time.timeZone = "Europe/Berlin";
 
 	services.openssh.enable = true;
 	services.qemuGuest.enable = true;
@@ -30,7 +30,7 @@
 		hashedPassword = "*";
 	};
 
-	users.users.anvil = {
+	users.users.tobi = {
 		isNormalUser = true;
 		extraGroups = [ "wheel" "docker" "systemd-journal" ];
 		shell = pkgs.zsh;
@@ -69,45 +69,23 @@
 		curl
 		docker
 		docker-buildx
-		eza
-		file
-		findutils
-		fzf
 		git
-		gnumake
-		gnutar
 		htop
-		iproute2
-		just
-		jq
-		killall
-		less
-		libuuid
 		linuxHeaders
 		lsof
 		mkpasswd
 		nano
-		netcat
 		nettools
-		nmap
 		openssl
-		pciutils
 		python3
 		python3Packages.pip
-		ripgrep
-		rsync
-		spice-vdagent
 		ssh-import-id
-		strace
-		sysstat
-		tealdeer
 		tmux
 		tree
 		tzdata
 		unzip
 		util-linux
 		wget
-		yq
 		zip
 		zsh-autosuggestions
 		zsh-syntax-highlighting

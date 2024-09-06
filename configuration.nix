@@ -11,11 +11,10 @@
   system.autoUpgrade.enable = true;
 
   # Set your time zone.
-  time.timeZone = "America/New_York";
-  #time.timeZone = "America/Los_Angeles";
+  time.timeZone = "Europe/Berlin";
 
   # Define a user account.
-  users.users.anvil = {
+  users.users.tobi = {
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" "systemd-journal" ];
     shell = pkgs.zsh;
@@ -54,45 +53,23 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     bash
-    cloud-init
     coreutils
     curl
     docker
     docker-buildx
     docker-compose
-    eza
-    findutils
-    fzf
     git
-    gnumake
-    gnutar
     htop
-    iproute2
-    jq
-    killall
-    less
-    libuuid
     linuxHeaders
     mkpasswd
-    netcat
     nettools
-    nmap
-    openssl
     python3
     python3Packages.pip
-    ripgrep
-    rsync
-    spice-vdagent
     ssh-import-id
-    strace
-    sysstat
-    tealdeer
-    tree
     tzdata
     unzip
     util-linux
     wget
-    yq
     zsh-autosuggestions
     zsh-syntax-highlighting
   ];
