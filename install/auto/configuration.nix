@@ -10,7 +10,7 @@
 	security.sudo.wheelNeedsPassword = false;
 
 	# default hostname
-	networking.hostName = "nixos-install";
+	networking.hostName = "nixos";
 	# disable ipv6
 	networking.enableIPv6  = false;
 
@@ -81,12 +81,10 @@
 		python3Packages.pip
 		ssh-import-id
 		tmux
-		tree
 		tzdata
 		unzip
 		util-linux
 		wget
-		zip
 		zsh-autosuggestions
 		zsh-syntax-highlighting
 	];
