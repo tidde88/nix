@@ -1,16 +1,3 @@
-## Links
-[Awesome Nix](https://github.com/nix-community/awesome-nix)
-
-[Nix Package Search](https://search.nixos.org/packages)
-
-[NixLang Wiki](https://nixlang.wiki/)
-
-[https://nix.dev/](https://nix.dev/)
-
-[Nix Starter Config](https://github.com/Misterio77/nix-starter-configs)
-
-[NixOS & Flakes Book](https://nixos-and-flakes.thiscute.world/introduction/)
-
 
 ## Create Proxmox VM
 copy and paste the following into a proxmox terminal and run it:
