@@ -63,8 +63,6 @@
     linuxHeaders
     mkpasswd
     nettools
-    python3
-    python3Packages.pip
     ssh-import-id
     tzdata
     unzip
