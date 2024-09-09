@@ -45,7 +45,7 @@ nix-shell -p curl
 
 # download file and save as setup
 
-curl -Ls  > setup && bash setup
+curl -Ls https://raw.githubusercontent.com/tidde88/nix/main/setup.sh > setup && bash setup
 
 ```
 
